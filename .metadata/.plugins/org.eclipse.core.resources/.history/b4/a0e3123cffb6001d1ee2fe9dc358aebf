@@ -1,0 +1,22 @@
+package example.SignUp;
+
+import java.util.Scanner;
+
+// 회원가입 프로세스 구현
+
+public class SignUp {
+	
+	// 입력
+	// 아이디, 패스워드, 패스워드 확인, 이름
+	
+	public static void main(String[] args) {
+		
+	Scanner scanner = new Scanner(System.in);
+	
+	
+		
+	}
+	// 결과
+	// 
+
+}

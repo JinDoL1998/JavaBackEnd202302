@@ -1,0 +1,40 @@
+package chapter3.D_Constructor;
+
+// 생성자
+// 인스턴스가 생성될 때 호출되는 인스턴스 '초기화 메서드'
+// 인스턴스 변수의 초기화 작업에 사용
+// 인스턴스 생성시에 실행 되어야 할 작업을 작성하는 위치
+
+// 생성자의 조건
+// 생성자의 이름은 해당 클래스명과 가타아야함
+// 생성자는 반환갑이 없음
+
+class Circle{
+	double radius;
+	double diameter;
+	double circumference;
+	double area;
+// 생성자 사용 벙봅
+// 클래스명([파라미터[,...]]) {인스턴스 생성시 실행할 코드}
+	Circle() {
+		System.out.println("Circle 생성자");
+	}
+	
+}
+
+public class Constructor {
+
+	public static void main(String[] args) {
+		
+		Circle circle1 = new Circle();
+		System.out.println(circle1.radius);
+		circle1.radius = 10;
+		circle1.diameter = 20;
+		circle1.circumference = 62.8;
+		circle1.area = 314;
+		
+		double radius;
+		
+	}
+
+}

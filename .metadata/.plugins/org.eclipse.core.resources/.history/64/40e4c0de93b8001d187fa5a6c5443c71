@@ -1,0 +1,13 @@
+package chapter3.B_VariableMethod;
+
+// 클래스에서의 변수
+
+public class VariableMethod {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}

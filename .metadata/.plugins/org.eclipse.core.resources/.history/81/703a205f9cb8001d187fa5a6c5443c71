@@ -1,0 +1,19 @@
+package chapter3.B_VariableMethod;
+
+// 메서드
+// 특정 작업을 수행하는 일련의 문장들을 하나로 묶은 것
+// 메서드에 넣을 갑과 반환 값만 알면됨(Black Box 구조)
+
+// 메서드의 장점
+// 1. 높은 재사용성: 한번 만들어 놓은 메서드를 반복해서 사용가능
+// 2. 중복 코드 제거: 
+
+public class Method1 {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}

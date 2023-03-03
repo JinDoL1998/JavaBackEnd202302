@@ -1,0 +1,60 @@
+package example.SignUp;
+
+import java.util.Scanner;
+
+// 회원가입 프로세스 구현
+
+public class SignUp {
+	
+	// 입력
+	// 아이디, 패스워드, 패스워드 확인, 이름
+	
+	public static void main(String[] args) {
+		String[] idList = { "qwer", "asdf", "zxcv" };
+
+		// 1. 사용자로부터 아이디, 패스워드, 패스워드 확인, 이름을 입력 받음
+		Scanner scanner = new Scanner(System.in);
+	
+		String userId;
+		String userPassword;
+		String checkUserPassword;
+		String userName;
+		
+		System.out.print("아이디: ");
+		userId = scanner.nextLine();
+		System.out.print("패스워드: ");
+		userPassword = scanner.nextLine();
+		System.out.print("패스워드 확인: ");
+		checkUserPassword = scanner.nextLine();
+		System.out.print("이름: ");
+		userName = scanner.nextLine();
+		
+		// 2. 모두 입력받았는지 검증
+		// string.isBlank(): 문자열이 비었거나 띄어쓰기만으로 구성됐을 때 true 반환, 아니면 false
+		if (userId.isBlank() || userPassword.isBlank() || checkUserPassword.isBlank() || userName.isBlank()) {
+			System.out.println("모두 입력해주세요");
+			return;
+		}
+		
+		// 3-1. 아이디 중복 체크
+		// 일반 for문 사용시
+//		for(int index = 0; index < idList.length; index++) {
+//			if (userId.equals(idList[index])) {
+//				System.out.println("이미 존재하는 아이디입니다.");
+//				return;
+//			}
+//		}
+		
+		// 3-2. foreach문 사용
+		for(String id: idList) {
+			if(userId.equals(id)) {
+				System.out.println("이미 존재하는 아이디입니다.");
+				return;
+			}
+		}
+		
+	}
+	// 결과
+	// 성공, 실패 (모두 입력하지 않았을 때, 아이디가 중복될때, 비밀번호가 서로 다를때)
+
+}

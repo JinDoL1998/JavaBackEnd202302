@@ -1,0 +1,18 @@
+package chapter3.D_Constructor;
+
+class Circle{
+	double radius;
+	double diameter;
+	double circumference;
+	double area;
+}
+
+public class Constructor {
+
+	public static void main(String[] args) {
+		
+		Circle circle1 = new Circle();
+		
+	}
+
+}

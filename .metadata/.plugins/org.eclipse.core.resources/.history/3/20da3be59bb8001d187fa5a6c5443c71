@@ -1,0 +1,11 @@
+package chapter3.B_VariableMethod;
+
+public class Method1 {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}

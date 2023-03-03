@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;chapter3.B_VariableMethod.Method3&apos; to &apos;Method2&apos;&#x0D;&#x0A;- Original project: &apos;javabasic&apos;&#x0D;&#x0A;- Original element: &apos;chapter3.B_VariableMethod.Method3&apos;&#x0D;&#x0A;- Renamed element: &apos;chapter3.B_VariableMethod.Method2&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Method3&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;chapter3.B_VariableMethod{Method3.java[Method3" matchStrategy="1" name="Method2" qualified="false" references="true" similarDeclarations="false" stamp="1677727739279" textual="false" version="1.0"/>
+</session>

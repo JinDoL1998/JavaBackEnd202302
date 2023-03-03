@@ -1,0 +1,18 @@
+package chapter2.D_While;
+
+// while 반복문
+// 일반적으로 반복횟수가 지정되어 있지 않을 때 사용하는 반복문
+
+public class While {
+
+	public static void main(String[] args) {
+		
+		// while문
+		// 조건을 검사하고 해당 조건이 true일 경우 코드 블럭을 실행하는 반복문
+		// if 문의 반복문 형태
+		// 반복 실행할 코드 블럭이 종료되면 조건을 다시 검사하고,
+		// true면 반복, false면 탈출
+		
+	}
+
+}

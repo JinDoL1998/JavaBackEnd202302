@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;chapter.C_For&apos; to &apos;chapter2.C_For&apos;&#x0D;&#x0A;- Original project: &apos;javabasic&apos;&#x0D;&#x0A;- Original element: &apos;javabasic/src/chapter.C_For&apos;&#x0D;&#x0A;- Renamed element: &apos;javabasic/src/chapter2.C_For&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;chapter.C_For&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;chapter.C_For" name="chapter2.C_For" qualified="false" references="true" stamp="1677457965845" textual="false" version="1.0"/>
+</session>

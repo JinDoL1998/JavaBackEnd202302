@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="chapter3.A_ClassObject.SmartPhone"/>
+    <fullyQualifiedTypeName name="example.SignUp.SignUpDto"/>
+    <fullyQualifiedTypeName name="chapter3.B_VariableMethod.GalaxyPhone"/>
+    <fullyQualifiedTypeName name="chapter3.B_VariableMethod.MonitorSize"/>
+    <fullyQualifiedTypeName name="chapter3.B_VariableMethod.HigherMathematics"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="chapter3.B_VariableMethod.TriangleFormula"/>
+    <fullyQualifiedTypeName name="chapter3.B_VariableMethod.Triangle"/>
+</qualifiedTypeNameHistroy>
