@@ -7,7 +7,8 @@
     <fullyQualifiedTypeName name="chapter3.B_VariableMethod.GalaxyPhone"/>
     <fullyQualifiedTypeName name="chapter3.B_VariableMethod.MonitorSize"/>
     <fullyQualifiedTypeName name="chapter3.B_VariableMethod.HigherMathematics"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="chapter3.B_VariableMethod.TriangleFormula"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="chapter3.B_VariableMethod.Triangle"/>
+    <fullyQualifiedTypeName name="chapter3.D_Constructor.Circle"/>
 </qualifiedTypeNameHistroy>
