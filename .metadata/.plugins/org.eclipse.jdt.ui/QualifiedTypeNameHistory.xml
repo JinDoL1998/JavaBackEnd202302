@@ -11,4 +11,10 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="chapter3.B_VariableMethod.Triangle"/>
     <fullyQualifiedTypeName name="chapter3.D_Constructor.Circle"/>
+    <fullyQualifiedTypeName name="chapter3.E_Inheritance.Developer"/>
+    <fullyQualifiedTypeName name="chapter3.F_Overriding.Developer"/>
+    <fullyQualifiedTypeName name="chapter3.F_Overriding.Human"/>
+    <fullyQualifiedTypeName name="chapter4.A_Modifier.Example"/>
+    <fullyQualifiedTypeName name="chapter4.A_AccessModifier.Example4"/>
+    <fullyQualifiedTypeName name="chapter4.A_Modifier.Example1"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,8 @@
+package chapter4.A_AccessModifier;
+
+// 접근 제어자
+// 멤버 또는 클래스의 접근 권한을 제한하는 제어자
+
+public class Example4 {
+	
+}

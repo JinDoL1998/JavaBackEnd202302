@@ -1,0 +1,21 @@
+package chapter4.A_Modifier;
+
+// 제어자
+// 클래스, 변수 혹은 메서드의 선언부에서 사용되는 부가적 의미를 추가해주는 키워드
+
+// 접근 제어자: public, protect, default, private
+
+// 기타 제어자: static, abstract, final
+
+// 하나의 대상에 여러개의 제어자를 종합해서 사용할 수 있음
+// 단, 접근 제어자는 한 선언에 대하여 한번만 사용할 수 있음
+// 제어자의 순서는 무관
+
+public class Modifier {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}
