@@ -1,0 +1,23 @@
+package chapter4.C_AbstractClass;
+
+// 추상 클래스
+// 추상 메서드가 포함되어있는 클래스
+// 추상 클래스로 인스턴스를 생성할 수 없음
+
+// 사용 방법:
+// abstract class 클래스명 { }
+abstract class Abstract {
+	int number1;
+	
+	abstract void method1();
+}
+
+public class AbstractClass {
+
+	public static void main(String[] args) {
+		
+		Abstract abstract1 = new Abstarct;
+		
+	}
+
+}

@@ -17,4 +17,10 @@
     <fullyQualifiedTypeName name="chapter4.A_Modifier.Example"/>
     <fullyQualifiedTypeName name="chapter4.A_AccessModifier.Example4"/>
     <fullyQualifiedTypeName name="chapter4.A_Modifier.Example1"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="chpater4.B_Polymorphism.SubClass2"/>
+    <fullyQualifiedTypeName name="chpater4.B_Polymorphism.SubClass1"/>
+    <fullyQualifiedTypeName name="chpater4.B_Polymorphism.SuperClass"/>
+    <fullyQualifiedTypeName name="chapter4.C_AbstractClass.AbstractClass"/>
+    <fullyQualifiedTypeName name="chapter4.D_Interface.ExampleInterface"/>
 </qualifiedTypeNameHistroy>

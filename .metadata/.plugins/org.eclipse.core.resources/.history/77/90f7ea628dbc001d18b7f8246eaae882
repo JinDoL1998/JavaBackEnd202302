@@ -1,0 +1,13 @@
+package chapter4.D_Interface;
+
+// 인터페이스
+
+public class Interface {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}

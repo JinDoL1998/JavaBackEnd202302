@@ -1,0 +1,23 @@
+package chpater4.B_Polymorphism;
+
+// 다형성
+// 조상 클래스 타입의 참조변수로 자손 클래스의 인스턴스를 참조할 수 있도록 하는 것
+// 참조변수의 형변환
+
+class SuperClass {
+	int number1;
+	int number2;
+	
+	void method1() { }
+	void method2() { }
+}
+
+public class Polymorphism {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}
