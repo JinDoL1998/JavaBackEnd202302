@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="chapter3.A_ClassObject.SmartPhone"/>
     <fullyQualifiedTypeName name="example.SignUp.SignUpDto"/>
     <fullyQualifiedTypeName name="chapter3.B_VariableMethod.GalaxyPhone"/>
@@ -23,4 +22,6 @@
     <fullyQualifiedTypeName name="chpater4.B_Polymorphism.SuperClass"/>
     <fullyQualifiedTypeName name="chapter4.C_AbstractClass.AbstractClass"/>
     <fullyQualifiedTypeName name="chapter4.D_Interface.ExampleInterface"/>
+    <fullyQualifiedTypeName name="example.Exchange.ExchangeRate"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

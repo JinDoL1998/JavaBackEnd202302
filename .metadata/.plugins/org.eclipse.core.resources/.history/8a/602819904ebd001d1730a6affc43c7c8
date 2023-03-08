@@ -1,0 +1,6 @@
+package example.Exchange;
+
+// 화폐: 화폐 = 환율
+public class ExchangeRate {
+	
+}

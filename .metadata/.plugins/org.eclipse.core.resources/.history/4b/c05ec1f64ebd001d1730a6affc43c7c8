@@ -1,0 +1,14 @@
+package example.Exchange;
+
+// 화폐: 화폐 = 환율
+public class ExchangeRate {
+	
+	// 넣을 화폐 (ex. 원화, 달러, 엔화, 위와화 ... )
+	double exchangingCurrency;
+	
+	// 바꿀 화폐 (ex. 원화, 달러, 엔화, 위와화 ... )
+	int exchangedCurrency;
+	
+	// 환율 (1,000 / 1,316.30)
+	exchangeRate
+}

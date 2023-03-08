@@ -1,0 +1,39 @@
+package example.Exchange;
+
+// 화폐: 화폐 = 환율
+public class ExchangeRate {
+	
+	// 넣을 화폐 (ex. 원화, 달러, 엔화, 위와화 ... )
+	private String exchangingCurrency;
+	
+	// 바꿀 화폐 (ex. 원화, 달러, 엔화, 위와화 ... )
+	private String exchangedCurrency;
+	
+	// 환율 (1,000 / 1,316.30)
+	private double exchangeRate;
+	
+	public ExchangeRate(String exchangingCurrency, String exchangedCurrency, double exchangeRate) {
+		this.exchangingCurrency = exchangingCurrency;
+		this.exchangedCurrency = exchangedCurrency;
+		this.exchangeRate = exchangeRate;
+	}
+	
+	// Get메서드
+	// 인스턴스가
+	public String getExchanginCurrency() {
+		return this.exchangingCurrency;
+	}
+	
+	public String getExchangedCurrency() {
+		return this.exchangedCurrency;
+	}
+	
+	public double getExchangeRate() {
+		return this.exchangeRate;
+	}
+	
+	//
+	public void setExchangingCurrency(String exchangingCurrency) {
+		
+	}
+}
