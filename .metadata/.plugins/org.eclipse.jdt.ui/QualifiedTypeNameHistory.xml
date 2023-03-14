@@ -34,15 +34,18 @@
     <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="chapter5.C_DateTime.DateTime"/>
-    <fullyQualifiedTypeName name="java.time.LocalTime"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="trainReservation.entity.Cost"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="trainReservation.entity.Seat"/>
     <fullyQualifiedTypeName name="trainReservation.entity.StopStation"/>
-    <fullyQualifiedTypeName name="trainReservation.entity.Train"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="trainReservation.dto.GetTrainListDto"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="trainReservation.entity.Train"/>
+    <fullyQualifiedTypeName name="trainReservation.dto.GetTrainListDto"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="trainReservation.service.ReservationService"/>
+    <fullyQualifiedTypeName name="trainReservation.Controller.ReservationController"/>
 </qualifiedTypeNameHistroy>
