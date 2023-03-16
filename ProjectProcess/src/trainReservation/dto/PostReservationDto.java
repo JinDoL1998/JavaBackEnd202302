@@ -5,69 +5,67 @@ import java.util.List;
 import java.util.Scanner;
 
 public class PostReservationDto {
-	
+
 	private String trainNumber;
-	private List<String> seats;
+	private List<String> steats;
 	
 	public PostReservationDto(int numberOfPeople) {
 		
 		Scanner scanner = new Scanner(System.in);
-		this.seats = new ArrayList<>();
+		this.steats = new ArrayList<>();
 		
 		while (true) {
-			
-			System.out.println("탑승할 열차 번호 : ");
+			System.out.print("탑승할 열차 번호 : ");
 			this.trainNumber = scanner.nextLine();
 			
-			if(this.trainNumber.isBlank()) {
-				System.out.println("열차 번호를 입력하세요");
+			if (this.trainNumber.isBlank()) {
+				System.out.println("열차 번호를 입력하세요.");
 				continue;
-			}
+			} 
 			break;
 		}
 		
-		while(this.seats.size() < numberOfPeople) {
-			System.out.println("좌석 번호 : ");
+		while (this.steats.size() < numberOfPeople) {
+			System.out.print("좌석 번호 : ");
 			String seat = scanner.nextLine();
 			
-			if(seat.isBlank()) {
-				System.out.println("좌석 번호를 입력하세요");
+			if (seat.isBlank()) {
+				System.out.println("좌석 번호를 입력하세요.");
 				continue;
 			}
-			this.seats.add(seat);
+			this.steats.add(seat);
 		}
 		
 	}
 
-	public PostReservationDto(String trainNumber, List<String> seats) {
+	public PostReservationDto(String trainNumber, List<String> steats) {
 		this.trainNumber = trainNumber;
-		this.seats = seats;
+		this.steats = steats;
 	}
 
 	public String getTrainNumber() {
 		return trainNumber;
 	}
 
-	public List<String> getSeats() {
-		return seats;
+	public List<String> getSteats() {
+		return steats;
 	}
 
 	public void setTrainNumber(String trainNumber) {
 		this.trainNumber = trainNumber;
 	}
 
-	public void setSeats(List<String> seats) {
-		this.seats = seats;
+	public void setSteats(List<String> steats) {
+		this.steats = steats;
 	}
 
 	@Override
 	public String toString() {
-		return "PostReservationDto [trainNumber=" + trainNumber + ", seats=" + seats + "]";
+		return "PostReservationDto [trainNumber=" + trainNumber + ", steats=" + steats + "]";
 	}
 	
 	public boolean isEqualTrainNumber(String trainNumber) {
 		return this.trainNumber.equals(trainNumber);
 	}
-	
 	
 }

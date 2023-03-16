@@ -1,16 +1,14 @@
 package trainReservation.entity;
 
 // 정차역 Entity class
-
 public class StopStation {
-
 	private String stationName;
 	private String departureTime;
 	private String arrivalTime;
 	
 	public StopStation() {}
 
-	public StopStation(String stationName, String departureTime, String arrivalTime) {
+	public StopStation(String stationName, String arrivalTime, String departureTime) {
 		this.stationName = stationName;
 		this.departureTime = departureTime;
 		this.arrivalTime = arrivalTime;
@@ -33,7 +31,5 @@ public class StopStation {
 		return "StopStation [stationName=" + stationName + ", departureTime=" + departureTime + ", arrivalTime="
 				+ arrivalTime + "]";
 	}
-	
-	
 	
 }
