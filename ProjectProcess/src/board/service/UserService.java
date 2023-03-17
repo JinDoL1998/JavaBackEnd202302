@@ -1,7 +1,10 @@
 package board.service;
 
+import board.common.constant.ResponseMessage;
+import board.dto.request.user.SignInDto;
 import board.dto.request.user.SignUpDto;
 import board.dto.response.ResponseDto;
+import board.dto.response.user.SignInResponseDto;
 import board.entity.User;
 import board.repository.UserRepository;
 
@@ -22,18 +25,38 @@ public class UserService {
 		boolean hasEmail = userRepository.existsByEmail(email);
 
 		if(hasEmail)
-			return new ResponseDto<Boolean>(false, "존재하는 이메일입니다", false);
+			return new ResponseDto<Boolean>(false, ResponseMessage.EXIST_EMAIL, false);
 		
 		if(!password.equals(passwordCheck)) {
-			System.out.println("비밀번호가 서로 다릅니다.");
-			return new ResponseDto<Boolean>(false, "비밀번호가 서로 다릅니다.", false);
+			return new ResponseDto<Boolean>(false, ResponseMessage.PASSWORD_NOT_MATCH, false);
 
 		}
 		
 		User user = new User(dto);
 		userRepository.save(user);
 		
-		return new ResponseDto<Boolean>(true, "성공", true);
+		return new ResponseDto<Boolean>(true, ResponseMessage.SUCCESS, true);
+		
+	}
+	
+	public ResponseDto<SignInResponseDto> signIn(SignInDto dto){
+		
+		SignInResponseDto data = null;
+		
+		String email = dto.getEmail();
+		String password = dto.getPassword();
+		
+		User user = userRepository.findByEmail(email);
+		if(user == null)
+			return new ResponseDto<>(false, ResponseMessage.FAIL_SIGN_IN, null);
+		
+		boolean isEqualPassword = user.getPassword().equals(password);
+		if(!isEqualPassword)
+			return new ResponseDto<>(false, ResponseMessage.FAIL_SIGN_IN, null);
+
+		data = new SignInResponseDto(user);
+		
+		return new ResponseDto<>(true, ResponseMessage.SUCCESS, data);
 		
 	}
 	
