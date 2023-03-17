@@ -1,5 +1,7 @@
 package board.entity;
 
+import board.dto.request.user.SignUpDto;
+
 // 회원
 //
 // 이메일 주소 (String) / 비밀번호 (String) / 
@@ -29,6 +31,15 @@ public class User {
 		this.profileImageUrl = profileImageUrl;
 	}
 
+	public User(SignUpDto dto) {
+		this.email = dto.getEmail();
+		this.password = dto.getPassword();
+		this.nickname = dto.getNickName();
+		this.phoneNumber = dto.getPhoneNumber();
+		this.address = dto.getAddress();
+		this.addressDetail = dto.getAddressDetail();
+	}
+	
 	public String getEmail() {
 		return email;
 	}

@@ -17,7 +17,7 @@ public class Board {
 	private String writerEmail;
 	private String writerNickname;
 	private String writerProfileImageUrl;
-	private String writerDate;
+	private String writeDate;
 	private String title;
 	private String content;
 	private int viewCount;
@@ -27,14 +27,14 @@ public class Board {
 	public Board() {}
 
 	public Board(int boardNumber, String boardImageUrl, String writerEmail, String writerNickname,
-			String writerProfileImageUrl, String writerDate, String title, String content, int viewCount,
+			String writerProfileImageUrl, String writrDate, String title, String content, int viewCount,
 			List<Like> likeList, List<Comment> commentList) {
 		this.boardNumber = boardNumber;
 		this.boardImageUrl = boardImageUrl;
 		this.writerEmail = writerEmail;
 		this.writerNickname = writerNickname;
 		this.writerProfileImageUrl = writerProfileImageUrl;
-		this.writerDate = writerDate;
+		this.writeDate = writeDate;
 		this.title = title;
 		this.content = content;
 		this.viewCount = viewCount;
@@ -63,7 +63,7 @@ public class Board {
 	}
 
 	public String getWriterDate() {
-		return writerDate;
+		return writeDate;
 	}
 
 	public String getTitle() {
@@ -107,7 +107,7 @@ public class Board {
 	}
 
 	public void setWriterDate(String writerDate) {
-		this.writerDate = writerDate;
+		this.writeDate = writerDate;
 	}
 
 	public void setTitle(String title) {
@@ -134,7 +134,7 @@ public class Board {
 	public String toString() {
 		return "Board [boardNumber=" + boardNumber + ", boardImageUrl=" + boardImageUrl + ", writerEmail=" + writerEmail
 				+ ", writerNickname=" + writerNickname + ", writerProfileImageUrl=" + writerProfileImageUrl
-				+ ", writerDate=" + writerDate + ", title=" + title + ", content=" + content + ", viewCount="
+				+ ", writerDate=" + writeDate + ", title=" + title + ", content=" + content + ", viewCount="
 				+ viewCount + ", likeList=" + likeList + ", commentList=" + commentList + "]";
 	}
 	
