@@ -1,22 +1,12 @@
-package board.entity;
+package board.dto.response.board;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
-import board.dto.response.board.PostBoardDto;
-import board.repository.BoardRepository;
+import board.entity.Board;
+import board.entity.Comment;
+import board.entity.Like;
 
-// 게시물
-//
-// 게시물 번호 (int) / 이미지 (String) / 
-// 작성자 이메일 (String) / 작성자 닉네임 (String) / 작성자 프로필 사진 (String) / 작성일 (String) / 
-// 제목 (String) / 내용 (String) /  조회 수 (int)                                                                                                                                      
-// 좋아요(좋아요한 사용자 프로필 사진, 좋아요 한 사용자 닉네임) 리스트 / 
-// 댓글(댓글 작성자 프로필 사진, 댓글 작성자 닉네임, 댓글 작성 지난 시간, 댓글 내용) 리스트
-
-public class Board {
+public class PostBoardResponseDto {
 	
 	private int boardNumber;
 	private String boardImageUrl;
@@ -30,9 +20,9 @@ public class Board {
 	private List<Like> likeList;
 	private List<Comment> commentList;
 	
-	public Board() {}
+	public PostBoardResponseDto() {}
 
-	public Board(int boardNumber, String boardImageUrl, String writerEmail, String writerNickname,
+	public PostBoardResponseDto(int boardNumber, String boardImageUrl, String writerEmail, String writerNickname,
 			String writerProfileImageUrl, String writeDate, String title, String content, int viewCount,
 			List<Like> likeList, List<Comment> commentList) {
 		this.boardNumber = boardNumber;
@@ -47,24 +37,21 @@ public class Board {
 		this.likeList = likeList;
 		this.commentList = commentList;
 	}
-	
-	public Board(PostBoardDto dto, User user) {
-		Date now = new Date();
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-		
-		this.boardNumber = ++BoardRepository.index;
-		this.boardImageUrl = dto.getBoardImageUrl();
-		this.writerEmail = user.getEmail();
-		this.writerNickname = user.getNickname();
-		this.writerProfileImageUrl = user.getProfileImageUrl();
-		this.writeDate = simpleDateFormat.format(now);
-		this.title = dto.getTitle();
-		this.content = dto.getContent();
-		this.viewCount = 0;
-		this.likeList = new ArrayList<>();
-		this.commentList = new ArrayList<>();
-	}
 
+	public PostBoardResponseDto(Board board) {
+		this.boardNumber = board.getBoardNumber();
+		this.boardImageUrl = board.getBoardImageUrl();
+		this.writerEmail = board.getWriterEmail();
+		this.writerNickname = board.getWriterNickname();
+		this.writerProfileImageUrl = board.getWriterProfileImageUrl();
+		this.writeDate = board.getWriteDate();
+		this.title = board.getTitle();
+		this.content = board.getContent();
+		this.viewCount = board.getViewCount();
+		this.likeList = board.getLikeList();
+		this.commentList = board.getCommentList();
+	}
+	
 	public int getBoardNumber() {
 		return boardNumber;
 	}
@@ -129,8 +116,8 @@ public class Board {
 		this.writerProfileImageUrl = writerProfileImageUrl;
 	}
 
-	public void setWriterDate(String writerDate) {
-		this.writeDate = writerDate;
+	public void setWriteDate(String writeDate) {
+		this.writeDate = writeDate;
 	}
 
 	public void setTitle(String title) {
@@ -155,10 +142,10 @@ public class Board {
 
 	@Override
 	public String toString() {
-		return "Board [boardNumber=" + boardNumber + ", boardImageUrl=" + boardImageUrl + ", writerEmail=" + writerEmail
-				+ ", writerNickname=" + writerNickname + ", writerProfileImageUrl=" + writerProfileImageUrl
-				+ ", writerDate=" + writeDate + ", title=" + title + ", content=" + content + ", viewCount="
-				+ viewCount + ", likeList=" + likeList + ", commentList=" + commentList + "]";
+		return "PostBoardResponseDto [boardNumber=" + boardNumber + ", boardImageUrl=" + boardImageUrl
+				+ ", writerEmail=" + writerEmail + ", writerNickname=" + writerNickname + ", writerProfileImageUrl="
+				+ writerProfileImageUrl + ", writeDate=" + writeDate + ", title=" + title + ", content=" + content
+				+ ", viewCount=" + viewCount + ", likeList=" + likeList + ", commentList=" + commentList + "]";
 	}
 	
 	
