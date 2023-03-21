@@ -1,131 +1,127 @@
 package chapter6.A_CollectionClass;
 
-import java.nio.charset.CodingErrorAction;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
+import java.util.Random;
 import java.util.Set;
 import java.util.TreeSet;
 
-/*
- * Collection Framework
- * 배열형태의 데이터를 보다 편하게 사용할 수 있도록 해주는 클래스의 집합
- */
+// Collection Framework
+// 배열 형태의 데이터를 보다 편하게 사용할 수 있도록 해주는 클래스의 집합
 
 public class CollectionClass {
 
 	public static void main(String[] args) {
 		
-//		Set클래스
-//		집합, 중복을 허용하지 않고 순서가 없는 형태
-//		순서가 없기 때문에 인덱스 사용 불가능
-//		hashSet : 중복 허용하지 않고 순서가 없는 형태
-//		TreeSet : 
+		// Set 클래스
+		// 집합 - 중복을 허용하지 않고 순서가 없는 형태
+		// 순서가 없기 때문에 index 사용 불가능
 		
+		// HashSet<E>: 중복을 허용하지 않고 순서가 없는 형태
 		Set<Integer> integerSet = new HashSet<Integer>();
-		integerSet.add(4);
-		integerSet.add(2);
-		integerSet.add(2);
-		integerSet.add(1);
-		integerSet.add(7);
-		integerSet.add(5);
-		integerSet.add(7);
+		integerSet.add(4859);
+		integerSet.add(123);
+		integerSet.add(4859);
+		integerSet.add(798);
+		integerSet.add(798);
+		integerSet.add(3564113);
 		
-		//iterator로 접근할 때는 일반적으로 while문을 쓴다
 		Iterator<Integer> iterator = integerSet.iterator();
 		
-		while(iterator.hasNext()) {
-			System.out.println(iterator.next());
-			
+//		while(iterator.hasNext()) {
+//			System.out.println(iterator.next());
+//		}
+		
+		for (Integer item: integerSet) {
+//			System.out.println(item);
 		}
 		
-		System.out.println();
+		// TreeSet<E>: 중복을 허용하지 않고 순서가 없는 형태 + 정렬
+		Set<Integer> treeSet = new TreeSet<Integer>();
+		treeSet.add(4859);
+		treeSet.add(123);
+		treeSet.add(4859);
+		treeSet.add(798);
+		treeSet.add(798);
+		treeSet.add(3564113);
 		
-		for(int items : integerSet) {
-			System.out.println(items);
+		for (Integer item: treeSet) {
+//			System.out.println(item);
 		}
 		
-		System.out.println(integerSet);
+		System.out.println("=================================");
 		
-//		TreeSet : 중복을 허용하지 않고 순서가 없는 형태 + 정렬 
+		// List
+		// 데이터를 일렬로 나열한 구조
+		// 순서가 존재하고 중복이 허용 (배열)
 		
-		Set<Integer> treeSet = new TreeSet<>();
-		treeSet.add(549);
-		treeSet.add(5654);
-		treeSet.add(235);
-		treeSet.add(715);
-		treeSet.add(54);
-		treeSet.add(76854);
-		System.out.println();
-		for (int treeItem : treeSet) {
-			System.out.println(treeItem);
-		}
-		
-		System.out.println("===================");
-		
-//		List 데이터를 일렬로 나열한 구조
-//		순서가 존재하고 중복이 허용된다
-		
-//		ArrayList : 순서가 존재하고 중복이 허용된 '배열'
+		// ArrayList<E> : 순서가 존재하고 중복이 허용된 '배열'
 		List<String> list = new ArrayList<String>();
-		
-		
 		list.add("apple");
 		list.add(0, "banana");
-		System.out.println(list);
 		
-		list.set(0, "melon");
+		list.set(0, "BaNaNa");
 		
-		for(int i =0 ; i<list.size() ; i++) {
-			System.out.println(list.get(i));
+		String removeItem = list.remove(1);
+		
+		System.out.println(removeItem);
+		System.out.println(list.toString());
+		
+		for (int index = 0; index < list.size(); index++) {
+			System.out.println(list.get(index));
 		}
 		
-		System.out.println(list.remove(1));
-		System.out.println(list);
+		// LinkedList<E> : 순서가 존재하고 중복이 허용된 '배열' + 
+		//                 각 요소가 이전 요소와 다음 요소의 주소를 같이 가지고 있음
+		//                 검색속도가 빠름
+		List<Integer> arrayList = new ArrayList<Integer>();
+		List<Integer> linkedList = new LinkedList<Integer>();
 		
-//		LinkedList<E> : 순서존재, 중복허용 +  각 요소가 이전 요소와 다음 요소의 주소를 같이 가지고 있다.
-//		검색속도가 빠르다 ? 난 더 느리다고 배웠는데? 검색시간이 빠른게 아니라 삽입에 걸리는 시간이 빠른거 아닌가
+		long startTime = System.currentTimeMillis();
+		for (int integer = 0; integer < 1_000_000; integer++)
+			arrayList.add(0, integer);
+		long endTime = System.currentTimeMillis();
 		
-		List<Integer> arrayList =  new ArrayList<>();
-		List<Integer> linkedList = new LinkedList<>();
+//		System.out.println("Array List 작업 시간 : " + (endTime - startTime));
 		
-//		long startTime = System.currentTimeMillis();
-//		for(int integer = 0 ; integer < 100000 ; integer++) {
-//			arrayList.add(0,integer);
-//		}
-//		long endTime = System.currentTimeMillis();
-//		System.out.println("Arraylist 작업시간" + (endTime - startTime));
-//		
-//		
-//		startTime = System.currentTimeMillis();
-//		for(int integer = 0 ; integer < 100000 ; integer++) {
-//			linkedList.add(0,integer);
-//		}
-//		endTime = System.currentTimeMillis();
-//		System.out.println("linkedList 작업시간" + (endTime - startTime));
-//		
-//	
-		System.out.println("===================");
+		startTime = System.currentTimeMillis();
+		for (int integer = 0; integer < 1_000_000; integer++)
+			linkedList.add(0, integer);
+
+		Iterator<Integer> arrayIterator = linkedList.listIterator();
+		Iterator<Integer> likedIterator = linkedList.listIterator();
+
+		startTime = System.currentTimeMillis();
+		while(arrayIterator.hasNext()) {
+			arrayIterator.next();
+		}
+		endTime = System.currentTimeMillis();
+		System.out.println("Array List 작업 시간 : " + (endTime - startTime));
 		
-//		Map<K, V> 
-//		key와 value가 하나의 쌍으로 저장되는 구조
-//		순서가 존재하지 않고, 단 key를 사용해서 특정한 value 를 가져 올 수 있음
+		startTime = System.currentTimeMillis();
+		while(likedIterator.hasNext()) {
+			likedIterator.next();
+		}
+		endTime = System.currentTimeMillis();
+		System.out.println("Linked List 작업 시간 : " + (endTime - startTime));
 		
-//		HashMap<E,E>
+		endTime = System.currentTimeMillis();
 		
+		System.out.println("Linked List 작업 시간 : " + (endTime - startTime));
+	
+		// Lotto 응용
+		Set<Integer> lotto = new TreeSet<>();
 		
-		Map<String, String> hashMap = new HashMap<>();
-		hashMap.put("Key", "value");
-		hashMap.put("apple", "사과");
+		while (lotto.size() < 6) {
+			Random random = new Random();
+			int randomNumber = random.nextInt(45) + 1;
+			lotto.add(randomNumber);
+		}
 		
-		System.out.println(hashMap.get("apple"));
-				
-				
-		
+		System.out.println(lotto.toString());
 		
 	}
 

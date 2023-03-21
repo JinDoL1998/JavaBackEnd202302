@@ -5,6 +5,7 @@ import java.util.Scanner;
 import board.common.constant.HttpStatus;
 import board.controller.BoardController;
 import board.controller.UserController;
+import board.dto.request.board.PatchBoardDto;
 import board.dto.request.user.SignInDto;
 import board.dto.request.user.SignUpDto;
 import board.dto.response.board.PostBoardDto;
@@ -94,7 +95,7 @@ public class BoardApplication {
 				int boardNumber = 0;
 				
 				try {
-					System.out.println("게시물 번호 : ");
+					System.out.print("게시물 번호 : ");
 					boardNumber = scanner.nextInt();
 				} catch (Exception exception){
 					exception.printStackTrace();
@@ -102,6 +103,48 @@ public class BoardApplication {
 				}
 				
 				boardController.getBoard(boardNumber);
+				break;
+				
+			case PATCH_BOARD:
+				PatchBoardDto patchBoardDto = new PatchBoardDto();
+				try {
+					System.out.print("게시물 번호 : ");
+					String patchBoardNumber = scanner.nextLine();
+					patchBoardDto.setBoardNumber(Integer.parseInt(patchBoardNumber));
+					System.out.print("제목 : ");
+					patchBoardDto.setTitle(scanner.nextLine());
+					System.out.print("내용 : ");
+					patchBoardDto.setContent(scanner.nextLine());
+					System.out.print("이미지 : ");
+					patchBoardDto.setBoardImageUrl(scanner.nextLine());
+					System.out.print("이메일 : ");
+					patchBoardDto.setEmail(scanner.nextLine());
+				} catch(Exception exception) {
+					exception.printStackTrace();
+					continue;
+				}
+				
+				boardController.patchBoard(patchBoardDto);
+								
+				break;
+				
+			case DELETE_BOARD:
+				int deleteBoardNumber = 0;
+				String deleteEmail = null;
+				try {
+					System.out.println("게시물 번호 입력 : ");
+					deleteBoardNumber = Integer.parseInt(scanner.nextLine());
+					System.out.println("이메일 입력 : ");
+					deleteEmail = scanner.nextLine();
+					
+				} catch (Exception exception) {
+					exception.printStackTrace();
+					continue;
+				}
+				
+				boardController.deleteBoard(deleteBoardNumber, deleteEmail);
+				
+				break;
 				
 			default:
 				System.out.println(HttpStatus.NOT_FOUND);

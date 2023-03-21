@@ -43,4 +43,14 @@ public class BoardRepository {
 		return boardTable;
 	}
 	
+	public void deleteByBoardNumber(int boardNumber) {
+		for (int index = 0; index < boardTable.size(); index++) {
+			Board board = boardTable.get(index);
+			if(board.getBoardNumber() == boardNumber) {
+				boardTable.remove(board);
+				break;
+			}
+		}
+	}
+	
 }

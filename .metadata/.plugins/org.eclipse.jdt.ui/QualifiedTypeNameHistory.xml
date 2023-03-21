@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="chapter4.A_AccessModifier.Example4"/>
-    <fullyQualifiedTypeName name="chapter4.A_Modifier.Example1"/>
-    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="chpater4.B_Polymorphism.SubClass2"/>
     <fullyQualifiedTypeName name="chpater4.B_Polymorphism.SubClass1"/>
     <fullyQualifiedTypeName name="chpater4.B_Polymorphism.SuperClass"/>
@@ -32,7 +29,6 @@
     <fullyQualifiedTypeName name="trainReservation.dto.GetReservationDto"/>
     <fullyQualifiedTypeName name="trainReservation.entity.ReservationInfo"/>
     <fullyQualifiedTypeName name="trainReservation.controller.ReservationController"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="board.controller.UserController"/>
     <fullyQualifiedTypeName name="java.lang.Boolean"/>
     <fullyQualifiedTypeName name="board.dto.request.user.SignUpDto"/>
@@ -40,24 +36,28 @@
     <fullyQualifiedTypeName name="board.dto.request.user.SignInDto"/>
     <fullyQualifiedTypeName name="board.service.UserService"/>
     <fullyQualifiedTypeName name="board.dto.response.user.SignInResponseDto"/>
-    <fullyQualifiedTypeName name="board.controller.BoardController"/>
     <fullyQualifiedTypeName name="board.service.BoardService"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="board.dto.response.board.PostBoardDto"/>
-    <fullyQualifiedTypeName name="board.entity.User"/>
     <fullyQualifiedTypeName name="board.repository.UserRepository"/>
     <fullyQualifiedTypeName name="board.dto.response.board.PostBoardResponseDto"/>
-    <fullyQualifiedTypeName name="board.repository.BoardRepository"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
-    <fullyQualifiedTypeName name="board.common.constant.HttpStatus"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="board.entity.Comment"/>
     <fullyQualifiedTypeName name="board.entity.Like"/>
     <fullyQualifiedTypeName name="board.dto.response.board.GetBoardListResponseDto"/>
+    <fullyQualifiedTypeName name="board.dto.response.board.GetBoardResponseDto"/>
+    <fullyQualifiedTypeName name="board.repository.BoardRepository"/>
     <fullyQualifiedTypeName name="board.entity.Board"/>
+    <fullyQualifiedTypeName name="board.dto.request.board.PatchBoardDto"/>
+    <fullyQualifiedTypeName name="board.dto.response.board.PatchBoardResponseDto"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="board.controller.BoardController"/>
+    <fullyQualifiedTypeName name="board.common.constant.HttpStatus"/>
+    <fullyQualifiedTypeName name="board.dto.response.board.DeleteBoardResponseDto"/>
+    <fullyQualifiedTypeName name="board.entity.User"/>
     <fullyQualifiedTypeName name="board.dto.response.ResponseDto"/>
     <fullyQualifiedTypeName name="board.common.constant.ResponseMessage"/>
-    <fullyQualifiedTypeName name="board.dto.response.board.GetBoardResponseDto"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

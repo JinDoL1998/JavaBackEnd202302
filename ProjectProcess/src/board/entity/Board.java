@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import board.dto.request.board.PatchBoardDto;
 import board.dto.response.board.PostBoardDto;
 import board.repository.BoardRepository;
 
@@ -161,6 +162,16 @@ public class Board {
 				+ viewCount + ", likeList=" + likeList + ", commentList=" + commentList + "]";
 	}
 	
+	public void increaseViewCount() {
+		this.viewCount++;
+	}
+	
+	public void patch(PatchBoardDto dto) {
+		this.title = dto.getTitle();
+		this.content = dto.getContent();
+		this.boardImageUrl = dto.getBoardImageUrl();
+		
+	}
 	
 	
 }
